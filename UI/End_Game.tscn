@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/End_Game.gd" type="Script" id=1]
+[ext_resource path="res://Backgrounds/blue.png" type="Texture" id=2]
 
 [node name="End_Game" type="Control"]
 anchor_right = 1.0
@@ -10,9 +11,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_top = -4.0
+margin_right = 1035.0
+margin_bottom = 617.0
+texture = ExtResource( 2 )
+expand = true
+
 [node name="Label" type="Label" parent="."]
 margin_right = 1024.0
 margin_bottom = 400.0
+text = "Game Over!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Play" type="Button" parent="."]
 margin_left = 462.0
